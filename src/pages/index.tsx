@@ -1,5 +1,6 @@
 import React from "react"
+import { Header } from "components/organisms/header"
 
-export default function Home() {
-  return <div>Hello world!</div>
-}
+const Home: React.FC = () => <Header />
+
+export default Home

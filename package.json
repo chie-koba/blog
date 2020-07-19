@@ -23,7 +23,8 @@
     "rebass": "4.0.7"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "typescript": "^3.9.7"
   },
   "repository": {
     "type": "git",
