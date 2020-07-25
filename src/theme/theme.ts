@@ -1,7 +1,5 @@
 import React from "react"
-import preset from "@rebass/preset"
 export const theme = {
-  ...preset,
   fontSizes: [12, 14, 16, 24, 32, 48, 64],
   colors: {
     primary: "#bbdefb",
