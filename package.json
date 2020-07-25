@@ -19,6 +19,7 @@
     "@types/rebass": "4.0.6",
     "emotion-theming": "10.0.27",
     "gatsby": "^2.23.12",
+    "gatsby-plugin-graphql-codegen": "2.7.1",
     "gatsby-plugin-typescript-checker": "1.1.1",
     "gatsby-source-filesystem": "2.3.23",
     "gatsby-transformer-remark": "2.8.27",

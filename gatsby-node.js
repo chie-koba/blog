@@ -11,7 +11,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const blogPostTemplate = require.resolve(
-    `./src/components/organisms/blogTemplate/index.tsx`
+    `./src/components/templates/blogTemplate/index.tsx`
   )
   const result = await graphql(`
     {
@@ -35,7 +35,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-  console.log("res", result)
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
