@@ -1,10 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { BlogTemplateQuery } from "../../../../types/graphql-types"
-import { css } from "twin.macro"
+import tw, { css } from "twin.macro"
 import { Theme } from "theme/theme"
 import { Header } from "components/organisms/header"
 import { Global } from "components/atoms/global"
+import { H2 } from "components/atoms/h2"
 
 interface Props {
   data: BlogTemplateQuery
@@ -20,6 +21,7 @@ const BlogTemplate: React.FC<Props> = props => {
           <div className="blog-post">
             <div>{props.data.markdownRemark?.frontmatter?.title}</div>
             <div>{props.data.markdownRemark?.frontmatter?.date}</div>
+            <H2>{props.data.markdownRemark?.frontmatter?.date}</H2>
             <div
               className="blog-post-content"
               dangerouslySetInnerHTML={{
@@ -35,12 +37,11 @@ const BlogTemplate: React.FC<Props> = props => {
 
 const backGroundStyle = (theme: Theme) =>
   css({
-    backgroundColor: theme.colors.fill,
     height: "100vh",
     width: "100vw",
   })
 
-const style = css({
+const style = css(tw`container`, tw`mx-auto`, {
   width: "60%",
   height: "100vh",
   marginLeft: "auto",
