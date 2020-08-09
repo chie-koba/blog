@@ -10,6 +10,7 @@ const style = css([
   tw`border-solid`,
   tw`text-xl`,
   tw`pb-2`,
+  tw`mt-12`,
   {
     borderImage: "linear-gradient(to right,  #ffccd3, #ff667a ) 1 / 0  0 4px",
   },

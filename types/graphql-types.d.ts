@@ -2143,6 +2143,6 @@ export type BlogTemplateQueryVariables = Exact<{
 
 
 export type BlogTemplateQuery = { markdownRemark?: Maybe<(
-    Pick<MarkdownRemark, 'html'>
+    Pick<MarkdownRemark, 'htmlAst'>
     & { frontmatter?: Maybe<Pick<MarkdownRemarkFrontmatter, 'date' | 'slug' | 'title'>> }
   )> };
