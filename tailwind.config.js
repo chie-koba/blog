@@ -11,6 +11,11 @@ module.exports = {
             h3: {
               fontWeight: "inherit",
             },
+            pre: false,
+            code: false,
+            "pre code": false,
+            "code::before": false,
+            "code::after": false,
           },
         ],
       },
