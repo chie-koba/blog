@@ -2,12 +2,12 @@ import React from "react"
 import { Global as EmotionGlobal } from "@emotion/core"
 import { css } from "twin.macro"
 import { Theme } from "theme/theme"
-import { Header } from "components/organisms/header"
 
-export const Global: React.FC = () => {
+export const Global: React.FC<{}> = props => {
   return (
     <>
       <EmotionGlobal styles={styles} />
+      {props.children}
     </>
   )
 }

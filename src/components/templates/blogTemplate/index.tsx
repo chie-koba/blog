@@ -4,7 +4,9 @@ import { BlogTemplateQuery } from "../../../../types/graphql-types"
 import tw, { css } from "twin.macro"
 import { Theme, renderAst } from "theme/theme"
 import { Header } from "components/organisms/header"
-import { Global } from "components/atoms/global"
+import { Global } from "components/global"
+import { H1 } from "components/atoms/h1"
+import { P } from "components/atoms/p"
 
 interface Props {
   data: BlogTemplateQuery
@@ -17,12 +19,10 @@ const BlogTemplate: React.FC<Props> = props => {
       <div css={backGroundStyle}>
         <Header />
         <div css={style}>
-          <div className="blog-post">
-            <div>{props.data.markdownRemark?.frontmatter?.title}</div>
-            <div>{props.data.markdownRemark?.frontmatter?.date}</div>
-            <div className="blog-post-content">
-              {renderAst(props.data.markdownRemark?.htmlAst)}
-            </div>
+          <H1>{props.data.markdownRemark?.frontmatter?.title}</H1>
+          <P>{props.data.markdownRemark?.frontmatter?.date}</P>
+          <div css={contentStyle}>
+            {renderAst(props.data.markdownRemark?.htmlAst)}
           </div>
         </div>
       </div>
@@ -36,13 +36,18 @@ const backGroundStyle = (theme: Theme) =>
     width: "100vw",
   })
 
-const style = css(tw`container`, tw`mx-auto`, {
-  width: "60%",
-  height: "100vh",
-  marginLeft: "auto",
-  marginRight: "auto",
-  backgroundColor: "#fff",
-})
+const style = css([
+  tw`px-6`,
+  tw`mx-auto`,
+
+  {
+    height: "100vh",
+    backgroundColor: "#fff",
+    maxWidth: "768px",
+  },
+])
+
+const contentStyle = css(tw`pt-10`, tw`prose`)
 
 export const pageQuery = graphql`
   query BlogTemplate($slug: String!) {

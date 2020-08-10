@@ -16,6 +16,7 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     "gatsby-plugin-typescript-checker",
+    "gatsby-plugin-emotion",
     {
       resolve: "gatsby-plugin-graphql-codegen",
       options: {
