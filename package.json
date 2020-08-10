@@ -16,6 +16,7 @@
     "@emotion/babel-preset-css-prop": "10.0.27",
     "@emotion/core": "10.0.28",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@tailwindcss/typography": "^0.2.0",
@@ -24,6 +25,8 @@
     "gatsby": "^2.23.12",
     "gatsby-plugin-emotion": "^4.3.10",
     "gatsby-plugin-graphql-codegen": "2.7.1",
+    "gatsby-plugin-manifest": "2.4.22",
+    "gatsby-plugin-react-helmet": "3.3.10",
     "gatsby-plugin-typescript-checker": "1.1.1",
     "gatsby-remark-prismjs": "^3.5.10",
     "gatsby-source-filesystem": "2.3.23",
@@ -31,11 +34,13 @@
     "prismjs": "1.21.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-helmet": "6.1.0",
     "rehype-react": "6.1.0",
     "tailwindcss": "1.5.2",
     "twin.macro": "1.7.0"
   },
   "devDependencies": {
+    "@types/react-helmet": "^6.1.0",
     "gatsby-remark-prismjs-title": "1.0.0",
     "prettier": "2.0.5",
     "typescript": "^3.9.7"

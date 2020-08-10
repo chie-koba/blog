@@ -1,11 +1,16 @@
 import React from "react"
 import tw, { css } from "twin.macro"
 import { Theme } from "theme/theme"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 export const Header: React.FC = () => {
   return (
     <>
-      <header css={headerStyle}>loz_blog</header>
+      <header css={headerStyle}>
+        <span>loz_blog</span>
+        <FontAwesomeIcon icon={faGithub} />
+      </header>
     </>
   )
 }

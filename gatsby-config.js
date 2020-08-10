@@ -57,6 +57,7 @@ module.exports = {
     },
     "gatsby-plugin-typescript-checker",
     "gatsby-plugin-emotion",
+    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-graphql-codegen",
       options: {
@@ -66,6 +67,18 @@ module.exports = {
           "./node_modules/gatsby-*/**/*.js",
           "./gatsby-node.ts",
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `loz_blog`,
+        short_name: `loz_blog`,
+        start_url: `/`,
+        background_color: `#E1E2E1`,
+        theme_color: `#ffccd3`,
+        display: `standalone`,
+        icon: `static/favicon.jpeg`,
       },
     },
   ],

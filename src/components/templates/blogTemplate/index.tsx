@@ -4,9 +4,9 @@ import { BlogTemplateQuery } from "../../../../types/graphql-types"
 import tw, { css } from "twin.macro"
 import { Theme, renderAst } from "theme/theme"
 import { Header } from "components/organisms/header"
-import { Global } from "components/global"
 import { H1 } from "components/atoms/h1"
 import { P } from "components/atoms/p"
+import { Helmet } from "react-helmet"
 
 interface Props {
   data: BlogTemplateQuery
@@ -15,8 +15,11 @@ interface Props {
 const BlogTemplate: React.FC<Props> = props => {
   return (
     <>
-      <Global />
       <div css={backGroundStyle}>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>{props.data.markdownRemark?.frontmatter?.title}</title>
+        </Helmet>
         <Header />
         <div css={style}>
           <H1>{props.data.markdownRemark?.frontmatter?.title}</H1>
@@ -54,7 +57,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       htmlAst
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY-MM-DD")
         slug
         title
       }
