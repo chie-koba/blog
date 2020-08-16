@@ -5,7 +5,7 @@ import tw, { css } from "twin.macro"
 import { Theme, renderAst } from "theme/theme"
 import { Header } from "components/organisms/header"
 import { H1 } from "components/atoms/h1"
-import { P } from "components/atoms/p"
+import { Date } from "components/molecules/date"
 import { Helmet } from "react-helmet"
 
 interface Props {
@@ -23,7 +23,10 @@ const BlogTemplate: React.FC<Props> = props => {
         <Header />
         <div css={style}>
           <H1>{props.data.markdownRemark?.frontmatter?.title}</H1>
-          <P>{props.data.markdownRemark?.frontmatter?.date}</P>
+          <Date
+            css={css([tw`mt-4`])}
+            date={props.data.markdownRemark?.frontmatter?.date}
+          ></Date>
           <div css={contentStyle}>
             {renderAst(props.data.markdownRemark?.htmlAst)}
           </div>
