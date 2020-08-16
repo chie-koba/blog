@@ -1168,7 +1168,7 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.30.tgz#2f1cc5b46bd76723be41d0013a8450c9ba92b777"
   integrity sha512-TsRwpTuKwFNiPhk1UfKgw7zNPeV5RhNp2Uw3pws+9gDAkPGKrtjR1y2lI3SYn7+YzyfuNknflpBA1LRKjt7hMg==
 
-"@fortawesome/fontawesome-svg-core@^1.2.30":
+"@fortawesome/fontawesome-svg-core@1.2.30":
   version "1.2.30"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.30.tgz#f56dc6791861fe5d1af04fb8abddb94658c576db"
   integrity sha512-E3sAXATKCSVnT17HYmZjjbcmwihrNOCkoU7dVMlasrcwiJAHxSKeZ+4WN5O+ElgO/FaYgJmASl8p9N7/B/RttA==
@@ -1189,14 +1189,14 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.30"
 
-"@fortawesome/free-solid-svg-icons@^5.14.0":
+"@fortawesome/free-solid-svg-icons@5.14.0":
   version "5.14.0"
   resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.14.0.tgz#970453f5e8c4915ad57856c3a0252ac63f6fec18"
   integrity sha512-M933RDM8cecaKMWDSk3FRYdnzWGW7kBBlGNGfvqLVwcwhUPNj9gcw+xZMrqBdRqxnSXdl3zWzTCNNGEtFUq67Q==
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.30"
 
-"@fortawesome/react-fontawesome@^0.1.11":
+"@fortawesome/react-fontawesome@0.1.11":
   version "0.1.11"
   resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.1.11.tgz#c1a95a2bdb6a18fa97b355a563832e248bf6ef4a"
   integrity sha512-sClfojasRifQKI0OPqTy8Ln8iIhnxR/Pv/hukBhWnBz9kQRmqi6JSH3nghlhAY7SUeIIM7B5/D2G8WjX0iepVg==
@@ -1730,7 +1730,7 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tailwindcss/typography@^0.2.0":
+"@tailwindcss/typography@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.2.0.tgz#b597c83502e3c3c6641a8aaabda223cd494ab349"
   integrity sha512-aPgMH+CjQiScLZculoDNOQUrrK2ktkbl3D6uCLYp1jgYRlNDrMONu9nMu8LfwAeetYNpVNeIGx7WzHSu0kvECg==
@@ -1925,7 +1925,7 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react-helmet@^6.1.0":
+"@types/react-helmet@6.1.0":
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-6.1.0.tgz#af586ed685f4905e2adc7462d1d65ace52beee7a"
   integrity sha512-PYRoU1XJFOzQ3BHvWL1T8iDNbRjdMDJMT5hFmZKGbsq09kbSqJy61uwEpTrbTNWDopVphUT34zUSVLK9pjsgYQ==
@@ -6082,7 +6082,7 @@ gatsby-page-utils@^0.2.20:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-emotion@^4.3.10:
+gatsby-plugin-emotion@4.3.10:
   version "4.3.10"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-4.3.10.tgz#569e9489837fa0f55db0a0264efda7f3c6c4a4cd"
   integrity sha512-OQrNgq3Te+bjra/sNo2PwOm24dPVr8MsjWf3X/3ciPf4bkf+Ey0jzJ36JnIIUIzZvpbyBHAr6eNzSOWnE2X2zA==
@@ -6260,7 +6260,7 @@ gatsby-remark-prismjs-title@1.0.0:
   dependencies:
     unist-util-visit "~1.4.0"
 
-gatsby-remark-prismjs@^3.5.10:
+gatsby-remark-prismjs@3.5.10:
   version "3.5.10"
   resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-3.5.10.tgz#4291818501c2d3f5970830b9509592efaf0f6b07"
   integrity sha512-1lywDdXyu+y7ieZ7PsrXgwtso1n59gO5btHdbZXCFpvuYt7MHoJhb0FewkbsZ3goJMJ2q8yug5jEGaRKX2vSOQ==
@@ -6338,7 +6338,7 @@ gatsby-transformer-remark@2.8.27:
     unist-util-select "^1.5.0"
     unist-util-visit "^1.4.1"
 
-gatsby@^2.23.12:
+gatsby@2.24.37:
   version "2.24.37"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.24.37.tgz#d9b8d705db4776682a1dcce0e37052824e8d4663"
   integrity sha512-WCrNQ9KUqTKV2mteZvJQ3m7Y7nakdJHAI8T6k+7prsDe9jCErzhWw+RtB3F309kpWnIEBH2ZfOk/sX9/DVFF+w==
@@ -10821,7 +10821,7 @@ react-dev-utils@^4.2.3:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@^16.12.0:
+react-dom@16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.13.1.tgz#c1bd37331a0486c078ee54c4740720993b2e0e7f"
   integrity sha512-81PIMmVLnCNLO/fFOQxdQkvEq/+Hfpv24XNJfpyZhTRfO0QcmQIF/PgCa1zCOj2w1hrn12MFLyaJ/G0+Mxtfag==
@@ -10957,7 +10957,7 @@ react-style-singleton@^2.1.0:
     invariant "^2.2.4"
     tslib "^1.0.0"
 
-react@^16.12.0, react@^16.8.0:
+react@16.13.1, react@^16.8.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
   integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
@@ -13011,7 +13011,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.9.7:
+typescript@3.9.7:
   version "3.9.7"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
   integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
