@@ -1,4 +1,4 @@
-import React, { ComponentProps } from "react"
+import React from "react"
 import rehypeReact from "rehype-react"
 import { H2 } from "components/atoms/h2"
 import { H3 } from "components/atoms/h3"
@@ -8,6 +8,7 @@ export const theme = {
   colors: {
     primary: "#ffccd3",
     text: "#000000",
+    grayText: "#4a5568",
     fill: "#E1E2E1",
   },
   fonts:
