@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@emotion/babel-preset-css-prop": "10.0.27",
-    "@emotion/core": "10.0.34",
+    "@emotion/core": "10.0.35",
     "@fortawesome/fontawesome-svg-core": "1.2.30",
     "@fortawesome/free-brands-svg-icons": "5.14.0",
     "@fortawesome/free-regular-svg-icons": "5.14.0",
